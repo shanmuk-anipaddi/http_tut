@@ -11,12 +11,10 @@ const MoviesList = () => {
     //const timer = setInterval(() => {
     fetchMovieshandler();
     //}, 5000);
-
     //return clearTimeout(timer);
   }, []);
 
   let content = "";
-
   const fetchMovieshandler = async () => {
     // try{
     setisLoading(true);

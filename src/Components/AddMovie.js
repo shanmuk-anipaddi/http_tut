@@ -6,7 +6,6 @@ const AddMovie = (props) => {
   const inputDate = useRef("");
 
   //const mId = useId();
-
   const addMovieHandler = (event) => {
     event.preventDefault();
     const movieObj = {
