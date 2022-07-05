@@ -1,6 +1,9 @@
 import React from "react";
 
 const MovieItem = (props) => {
+
+  console.log('props : ',props);
+
   return (
     <div>
       <ul>
@@ -8,9 +11,9 @@ const MovieItem = (props) => {
           return (
             <li key={movie.id}>
               <div>Id: {movie.id}</div>
-              <div>Name:{movie.movieName}</div>
-              <div>Description : {movie.descirption}</div>
-              <div>Release Date :{movie.Realease_date}</div>
+              <div>Name:{movie.name}</div>
+              <div>Description : {movie.desc}</div>
+              <div>Release Date :{movie.release_date}</div>
             </li>
           );
         })}
