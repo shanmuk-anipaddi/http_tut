@@ -1,8 +1,7 @@
 import React from "react";
 
 const MovieItem = (props) => {
-
-  console.log('props : ',props);
+  console.log("props : ", props);
 
   return (
     <div>

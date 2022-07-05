@@ -14,7 +14,6 @@ const AddMovie = (props) => {
       release_date: inputDate.current.value,
     };
     //console.log(movieObj)
-
     props.addNewMovie(movieObj);
     // console.log("Name : ", inputName.current.value);
     // console.log("Desc : ", inputDesc.current.value);
