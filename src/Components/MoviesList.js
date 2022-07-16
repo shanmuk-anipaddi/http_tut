@@ -124,18 +124,14 @@ const MoviesList = () => {
   //     }
   //   );
   // };
-
   const addNewMovieHandler = (newMovie) => {
-    console.log({newMovie});
+    console.log({ newMovie });
     axios.post(
       "https://test-react-http-14756-default-rtdb.firebaseio.com/movies.json",
-      
-        newMovie
-        
-      
+
+      newMovie
     );
   };
-
   return (
     <div>
       <AddMovie addNewMovie={addNewMovieHandler} />
