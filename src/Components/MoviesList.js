@@ -111,27 +111,27 @@ const MoviesList = () => {
     content = <p>{errorState}</p>;
   }
   console.log("Content : ", content);
-  // const addNewMovieHandler = (newMovie) => {
-  //   //console.log("Movie List : ", newMovie);
-  //   const pushMovie = fetch(
-  //     "https://test-react-http-14756-default-rtdb.firebaseio.com/movies.json",
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify(newMovie),
-  //       Headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     }
-  //   );
-  // };
   const addNewMovieHandler = (newMovie) => {
-    console.log({ newMovie });
-    axios.post(
+    //console.log("Movie List : ", newMovie);
+    const pushMovie = fetch(
       "https://test-react-http-14756-default-rtdb.firebaseio.com/movies.json",
-
-      newMovie
+      {
+        method: "POST",
+        body: JSON.stringify(newMovie),
+        Headers: {
+          "Content-Type": "application/json",
+        },
+      }
     );
   };
+  // const addNewMovieHandler = (newMovie) => {
+  //   console.log({ newMovie });
+  //   axios.post(
+  //     "https://test-react-http-14756-default-rtdb.firebaseio.com/movies.json",
+
+  //     newMovie
+  //   );
+  // };
   return (
     <div>
       <AddMovie addNewMovie={addNewMovieHandler} />
